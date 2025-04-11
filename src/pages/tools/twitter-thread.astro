@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TwitterThreadGenerator from '../../components/TwitterThreadGenerator';
+---
+
+<Layout title="Twitter Thread Generator - AI-Free-Forever">
+  <main class="container mx-auto px-4 py-12">
+    <div class="bg-gradient-to-br from-sky-50 to-sky-100/50 py-16 mb-12 rounded-2xl text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Twitter Thread Generator
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Create engaging Twitter threads that captivate your audience. Generate multiple variations with customizable options.
+      </p>
+    </div>
+    <TwitterThreadGenerator client:load />
+  </main>
+</Layout>

@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FacebookPostGenerator from '../../components/FacebookPostGenerator';
+---
+
+<Layout title="Facebook Post Generator - AI-Free-Forever">
+  <main class="container mx-auto px-4 py-12">
+    <div class="bg-gradient-to-br from-facebook/10 to-facebook/5 py-16 mb-12 rounded-2xl text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Facebook Post Generator
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Create engaging Facebook posts that drive engagement and spark conversations. Generate multiple variations with different tones and styles.
+      </p>
+    </div>
+    <FacebookPostGenerator client:load />
+  </main>
+</Layout>

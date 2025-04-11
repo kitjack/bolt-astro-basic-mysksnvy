@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import InstagramCaptionGenerator from '../../components/InstagramCaptionGenerator';
+---
+
+<Layout title="Instagram Caption Generator - AI-Free-Forever">
+  <main class="container mx-auto px-4 py-12">
+    <div class="bg-gradient-to-br from-pink-50 to-orange-100/50 py-16 mb-12 rounded-2xl text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Instagram Caption Generator
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Create engaging Instagram captions that capture attention and drive engagement. Generate multiple variations with different tones and styles.
+      </p>
+    </div>
+    <InstagramCaptionGenerator client:load />
+  </main>
+</Layout>

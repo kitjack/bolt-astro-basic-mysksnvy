@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DomainGenerator from '../../components/DomainGenerator';
+---
+
+<Layout title="Domain Name Generator - AI-Free-Forever">
+  <main class="container mx-auto px-4 py-12">
+    <div class="bg-gradient-to-br from-orange-50 to-orange-100/50 py-16 mb-12 rounded-2xl text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Domain Name Generator
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Generate creative and available domain names for your business using AI. Get instant suggestions that match your brand.
+      </p>
+    </div>
+    <DomainGenerator client:load />
+  </main>
+</Layout>

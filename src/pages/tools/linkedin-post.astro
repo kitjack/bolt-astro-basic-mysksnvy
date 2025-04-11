@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LinkedInPostGenerator from '../../components/LinkedInPostGenerator';
+---
+
+<Layout title="LinkedIn Post Generator - AI-Free-Forever">
+  <main class="container mx-auto px-4 py-12">
+    <div class="bg-gradient-to-br from-blue-50 to-blue-100/50 py-16 mb-12 rounded-2xl text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        LinkedIn Post Generator
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Create engaging, professional LinkedIn posts that drive engagement and showcase your expertise. Generate multiple variations with different tones.
+      </p>
+    </div>
+    <LinkedInPostGenerator client:load />
+  </main>
+</Layout>

@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import YouTubeDescriptionGenerator from '../../components/YouTubeDescriptionGenerator';
+---
+
+<Layout title="YouTube Description Generator - AI-Free-Forever">
+  <main class="container mx-auto px-4 py-12">
+    <div class="bg-gradient-to-br from-red-50 to-red-100/50 py-16 mb-12 rounded-2xl text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        YouTube Description Generator
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Create engaging, SEO-optimized YouTube video descriptions with AI. Boost your video's visibility and engagement.
+      </p>
+    </div>
+    <YouTubeDescriptionGenerator client:load />
+  </main>
+</Layout>
